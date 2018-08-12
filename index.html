@@ -3,9 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Board!</title>
-		<link rel="stylesheet" type="text/css" href="index.css">
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   		<script>
   			$(function() {
   				$(".board-column").sortable({
@@ -16,6 +18,15 @@
   		</script>
 	</head>
 	<body>
+		<div id="item-details" class="modal">
+			<header>Title</header>
+			<p>Detailed description</p>
+			<ul>
+				<li>tag 1</li>
+				<li>tag 2</li>
+				<li>tag 3</li>
+			</ul>
+		</div>
 		<div id="board">
 			<div class="board-header">
 				<div class="board-column-header"></div>
@@ -28,40 +39,78 @@
 					iii
 				</div>
 				<div class="board-column">
-					<div class="board-item">
-						<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
-						<div class="item-labels">1 2 3</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
+								<div class="item-labels">1 2 3</div>
+							</div>
+						</a>
 					</div>
-					<div class="board-item">
-						<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
-						<div class="item-labels">1 2 3</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
+								<div class="item-labels">1 2 3</div>
+							</div>
+						</a>
 					</div>
-					<div class="board-item">
-						<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
-						<div class="item-labels">1 2 3</div>
-					</div>
-				</div>
-				<div class="board-column">
-					<div class="board-item">
-						<div class="item-title">aaa</div>
-					</div>
-					<div class="board-item">
-						<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
-						<div class="item-labels">1 2 3</div>
-					</div>
-					<div class="board-item">
-						<div class="item-title">aaa</div>
-					</div>
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
+								<div class="item-labels">1 2 3</div>
+							</div>
+						</a>
 					</div>
 				</div>
 				<div class="board-column">
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
 					</div>
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
+								<div class="item-labels">1 2 3</div>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="board-column">
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+								<div class="item-labels"></div>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+								<div class="item-labels"></div>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -70,56 +119,112 @@
 					iii
 				</div>
 				<div class="board-column">
-					<div class="board-item">
-						<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
-						<div class="item-labels">1 2 3</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
+								<div class="item-labels">1 2 3</div>
+							</div>
+						</a>
 					</div>
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
 					</div>
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
 					</div>
-					<div class="board-item">
-						<div class="item-title">aaa</div>
-					</div>
-				</div>
-				<div class="board-column">
-					<div class="board-item">
-						<div class="item-title">aaa</div>
-					</div>
-					<div class="board-item">
-						<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
-						<div class="item-labels">1 2 3</div>
-					</div>
-					<div class="board-item">
-						<div class="item-title">aaa</div>
-					</div>
-					<div class="board-item">
-						<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
-						<div class="item-labels">1 2 3</div>
-					</div>
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
 					</div>
 				</div>
 				<div class="board-column">
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
 					</div>
-					<div class="board-item">
-						<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
-						<div class="item-labels">1 2 3</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
+								<div class="item-labels">1 2 3</div>
+							</div>
+						</a>
 					</div>
-					<div class="board-item">
-						<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
-						<div class="item-labels">1 2 3</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
 					</div>
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
+								<div class="item-labels">1 2 3</div>
+							</div>
+						</a>
 					</div>
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="board-column">
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
+								<div class="item-labels">1 2 3</div>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa fesfe feszf efs fesz fes zf eszf ezsg eszg esz gesz ge szg e</div>
+								<div class="item-labels">1 2 3</div>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
+					</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -128,36 +233,72 @@
 					iii
 				</div>
 				<div class="board-column">
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
 					</div>
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
 					</div>
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
 					</div>
 				</div>
 				<div class="board-column">
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
 					</div>
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
 					</div>
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
 					</div>
 				</div>
 				<div class="board-column">
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
 					</div>
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
 					</div>
-					<div class="board-item">
-						<div class="item-title">aaa</div>
+					<div>
+						<a href="#item-details" rel="modal:open">
+							<div class="board-item">
+								<div class="item-title">aaa</div>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
